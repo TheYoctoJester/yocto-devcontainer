@@ -1,5 +1,5 @@
   
-FROM buildpack-deps:focal
+FROM ubuntu:focal
 
 COPY install-packages /usr/bin
 
