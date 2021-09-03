@@ -45,6 +45,9 @@ RUN yes | unminimize \
         xterm \
         python3-subunit \
         mesa-common-dev \
+        lz4 \
+        zstd \
+        file \
     && locale-gen en_US.UTF-8
 
 ENV LANG=en_US.UTF-8
