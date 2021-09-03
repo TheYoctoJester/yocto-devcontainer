@@ -49,6 +49,8 @@ RUN yes | unminimize \
 
 ENV LANG=en_US.UTF-8
 
+RUN pip3 install kas
+
 ### Gitpod user ###
 # '-l': see https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod \
