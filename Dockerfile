@@ -48,6 +48,8 @@ RUN yes | unminimize \
         lz4 \
         zstd \
         file \
+        iproute2 \
+        openssh-client \
     && locale-gen en_US.UTF-8
 
 ENV LANG=en_US.UTF-8
@@ -74,3 +76,4 @@ RUN sudo echo "Running 'sudo' for Gitpod: success" && \
 
 # get esdk
 RUN wget http://downloads.yoctoproject.org/releases/yocto/yocto-3.3/toolchain/x86_64/poky-glibc-x86_64-core-image-minimal-cortexa57-qemuarm64-toolchain-ext-3.3.sh
+RUN sh poky-glibc-x86_64-core-image-minimal-cortexa57-qemuarm64-toolchain-ext-3.3.sh -y -d ~/qemuarm64
