@@ -75,8 +75,8 @@ RUN sudo echo "Running 'sudo' for Gitpod: success" && \
     (echo; echo "for i in \$(ls \$HOME/.bashrc.d/*); do source \$i; done"; echo) >> /home/gitpod/.bashrc
 
 # get esdk
-RUN wget http://downloads.yoctoproject.org/releases/yocto/yocto-3.3/toolchain/x86_64/poky-glibc-x86_64-core-image-minimal-cortexa57-qemuarm64-toolchain-ext-3.3.sh
+#RUN wget http://downloads.yoctoproject.org/releases/yocto/yocto-3.3/toolchain/x86_64/poky-glibc-x86_64-core-image-minimal-cortexa57-qemuarm64-toolchain-ext-3.3.sh
 #RUN sh poky-glibc-x86_64-core-image-minimal-cortexa57-qemuarm64-toolchain-ext-3.3.sh -y -d ~/qemuarm64
 
-RUN wget http://downloads.yoctoproject.org/releases/yocto/yocto-3.1.10/toolchain/x86_64/poky-glibc-x86_64-core-image-minimal-aarch64-qemuarm64-toolchain-ext-3.1.10.sh
-RUN sh poky-glibc-x86_64-core-image-minimal-aarch64-qemuarm64-toolchain-ext-3.1.10.sh -y
+#RUN wget http://downloads.yoctoproject.org/releases/yocto/yocto-3.1.10/toolchain/x86_64/poky-glibc-x86_64-core-image-minimal-aarch64-qemuarm64-toolchain-ext-3.1.10.sh
+#RUN sh poky-glibc-x86_64-core-image-minimal-aarch64-qemuarm64-toolchain-ext-3.1.10.sh -y
