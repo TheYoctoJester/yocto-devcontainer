@@ -50,6 +50,7 @@ RUN yes | unminimize \
         file \
         iproute2 \
         openssh-client \
+        tree \
     && locale-gen en_US.UTF-8
 
 ENV LANG=en_US.UTF-8
