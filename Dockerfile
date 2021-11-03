@@ -51,11 +51,16 @@ RUN yes | unminimize \
         iproute2 \
         openssh-client \
         tree \
+        novnc \
+        net-tools \
     && locale-gen en_US.UTF-8
 
 ENV LANG=en_US.UTF-8
 
 RUN pip3 install kas
+
+# add redirect so the preview works nicely
+COPY novnc-index.html /usr/share/novnc/index.html
 
 ### Gitpod user ###
 # '-l': see https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user
