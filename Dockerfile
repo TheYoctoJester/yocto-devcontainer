@@ -57,7 +57,7 @@ RUN yes | unminimize \
 
 ENV LANG=en_US.UTF-8
 
-RUN pip3 install kas
+RUN pip3 install kas==2.5
 
 # add redirect so the preview works nicely
 COPY novnc-index.html /usr/share/novnc/index.html
